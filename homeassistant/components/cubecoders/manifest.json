@@ -1,0 +1,13 @@
+{
+  "domain": "cubecoders",
+  "name": "AMP",
+  "codeowners": ["@samywamy10"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://www.home-assistant.io/integrations/cubecoders",
+  "homekit": {},
+  "iot_class": "local_polling",
+  "requirements": ["cc-ampapi==1.0.7"],
+  "ssdp": [],
+  "zeroconf": []
+}

@@ -117,6 +117,7 @@ FLOWS = {
         "coolmaster",
         "cpuspeed",
         "crownstone",
+        "cubecoders",
         "daikin",
         "deako",
         "deconz",
