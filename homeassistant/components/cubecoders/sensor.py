@@ -6,6 +6,7 @@ from homeassistant.components.sensor import (
     SensorDeviceClass,
     SensorEntity,
     SensorEntityDescription,
+    SensorStateClass,
 )
 from homeassistant.const import PERCENTAGE, UnitOfInformation
 from homeassistant.core import HomeAssistant
@@ -41,6 +42,7 @@ async def async_setup_entry(
                 name="Active Users",
                 key="active_users",
                 icon="mdi:account-group",
+                state_class=SensorStateClass.MEASUREMENT
             ),
             AmpSensor(
                 entry,
@@ -49,6 +51,7 @@ async def async_setup_entry(
                 name="Max Active Users",
                 key="max_active_users",
                 icon="mdi:account-group",
+                state_class=SensorStateClass.MEASUREMENT
             ),
             AmpSensor(
                 entry,
@@ -99,6 +102,7 @@ class AmpSensor(AMPEntity, SensorEntity):
         name: str,
         key: str,
         device_class: SensorDeviceClass | None = None,
+        state_class: SensorStateClass | None = None,
         native_unit_of_measurement: str | None = None,
         icon: str | None = None,
     ) -> None:
@@ -111,6 +115,7 @@ class AmpSensor(AMPEntity, SensorEntity):
             icon=icon,
             device_class=device_class,
             native_unit_of_measurement=native_unit_of_measurement,
+            state_class=state_class,
             # suggested_unit_of_measurement=suggested_unit_of_measurement,
         )
         self.key = key
