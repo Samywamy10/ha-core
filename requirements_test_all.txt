@@ -596,6 +596,9 @@ cached-ipaddress==0.8.0
 # homeassistant.components.caldav
 caldav==1.3.9
 
+# homeassistant.components.cubecoders
+cc-ampapi==1.0.7
+
 # homeassistant.components.coinbase
 coinbase-advanced-py==1.2.2
 

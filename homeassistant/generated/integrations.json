@@ -1072,6 +1072,12 @@
       "config_flow": true,
       "iot_class": "cloud_push"
     },
+    "cubecoders": {
+      "name": "AMP",
+      "integration_type": "hub",
+      "config_flow": true,
+      "iot_class": "local_polling"
+    },
     "cups": {
       "name": "CUPS",
       "integration_type": "hub",

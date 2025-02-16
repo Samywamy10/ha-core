@@ -2147,6 +2147,7 @@ INTEGRATIONS_WITHOUT_SCALE = [
     "twinkly",
     "twitch",
     "twitter",
+    "cubecoders",
     "ubus",
     "uk_transport",
     "ukraine_alarm",
