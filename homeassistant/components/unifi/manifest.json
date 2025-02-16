@@ -7,7 +7,9 @@
   "integration_type": "hub",
   "iot_class": "local_push",
   "loggers": ["aiounifi"],
-  "requirements": ["aiounifi==81"],
+  "requirements": [
+    "git+https://github.com/Samywamy10/aiounifi@zone-based-rules"
+  ],
   "ssdp": [
     {
       "manufacturer": "Ubiquiti Networks",
